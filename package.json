@@ -1,0 +1,62 @@
+{
+  "name": "@kira905/dsh-peer-toolkit",
+  "version": "0.1.1",
+  "description": "Multi-host helpers for DeepSeek Harness (DSH) - a peer toolkit: encrypted cross-host mailbox with receipts, route arbitration between LAN and tunnel, on-demand user-space SSH tunnels that bind loopback only, and a compare-first text synchronizer that never deletes. Zero third-party runtime dependencies, no background services, no TUN drivers.",
+  "license": "AGPL-3.0-only",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "dsh-peer-tunnel": "dsh-peer-tunnel.mjs",
+    "dsh-peer-arbiter": "dsh-peer-arbiter.mjs",
+    "dsh-mailbox": "dsh-mailbox.mjs",
+    "dsh-peer-agent": "dsh-peer-agent.mjs",
+    "dsh-peer-sync": "dsh-peer-sync.mjs"
+  },
+  "scripts": {
+    "test": "node test/run.mjs",
+    "test:fast": "node test/run.mjs --fast",
+    "test:redact": "node test/redact-scan.mjs",
+    "check:help": "node test/05-cli-help.test.mjs"
+  },
+  "files": [
+    "lib/",
+    "dsh-peer-tunnel.mjs",
+    "dsh-peer-arbiter.mjs",
+    "dsh-mailbox.mjs",
+    "dsh-peer-agent.mjs",
+    "dsh-peer-sync.mjs",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "multi-host",
+    "cross-host",
+    "peer",
+    "mailbox",
+    "relay",
+    "ssh-tunnel",
+    "port-forwarding",
+    "route-arbitration",
+    "file-sync",
+    "zero-dependency",
+    "loopback-only"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kira905/dsh-peer-toolkit.git"
+  },
+  "homepage": "https://github.com/kira905/dsh-peer-toolkit#readme",
+  "bugs": {
+    "url": "https://github.com/kira905/dsh-peer-toolkit/issues"
+  }
+}
