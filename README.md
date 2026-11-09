@@ -34,9 +34,9 @@
 
 ---
 
-> **本仓是命令行工具，不挂宿主界面，不需要 `dsh.bundle`、不需要写 `cordis.patch.yml`。**
+> **本仓是命令行工具，不挂宿主界面，不需要 `dsh.bundle`（插件 `package.json` 里那行「让 DSH 启动时自动挂上我」的声明）、不需要写 `cordis.patch.yml`（DSH 读的插件挂载清单）。**
 > 装它 = `npm i -g @kira905/dsh-peer-toolkit`（或 `npx -p @kira905/dsh-peer-toolkit dsh-peer-tunnel`）。
-> 装进 profile 也对，但那条 `declares no dsh.bundle` 警告是**正常现象**，不是故障。
+> 装进 `profile`（放插件的那个格子：`~/.dsh/profiles/<名字>`）也对，但那条 `declares no dsh.bundle` 警告是**正常现象**，不是故障。
 
 ## ⚠️ 先读这段（比任何用法都重要）
 
